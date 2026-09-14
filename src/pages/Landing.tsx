@@ -17,13 +17,12 @@ export default function Landing() {
         
         <div className="hidden md:flex items-center gap-8 font-medium text-charcoal/80">
           <Link to="/screen" className="hover:text-forest transition-colors">Screening</Link>
-          <a href="#" className="hover:text-forest transition-colors">How it works</a>
-          <a href="#" className="hover:text-forest transition-colors">For Clinicians</a>
-          <a href="#" className="hover:text-forest transition-colors">For Health Systems</a>
+          <Link to="/how-it-works" className="hover:text-forest transition-colors">How it works</Link>
+          <Link to="/dashboard" className="hover:text-forest transition-colors">For Clinicians</Link>
         </div>
         
         <div className="flex items-center gap-4">
-          <Link to="/dashboard" className="hidden md:block font-medium text-forest hover:text-forest-dark transition-colors">Login</Link>
+          <Link to="/login" className="hidden md:block font-medium text-forest hover:text-forest-dark transition-colors">Login</Link>
           <Link 
             to="/screen" 
             className="bg-forest text-cream px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-forest-dark transition-all duration-300"
