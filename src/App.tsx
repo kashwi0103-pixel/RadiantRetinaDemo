@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import ScreeningFlow from './pages/ScreeningFlow';
 import RegionalIntelligence from './pages/RegionalIntelligence';
 import HealthSystem from './pages/HealthSystem';
+import Patients from './pages/Patients';
 
 function MainLayout() {
   return (
@@ -29,21 +30,12 @@ export default function App() {
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/login" element={<Login />} />
         
-        {/* Mock Patient Portal */}
-        <Route path="/patient-portal" element={
-          <div className="min-h-screen bg-cream p-10 flex flex-col items-center justify-center">
-            <h1 className="text-4xl text-forest font-bold mb-4">Patient Portal</h1>
-            <p className="text-lg text-charcoal/70">Welcome back, Maria Garcia. Your eye health journey continues here.</p>
-            <a href="/" className="mt-8 text-botanical hover:text-forest transition-colors font-semibold">Return to Home</a>
-          </div>
-        } />
-        
         <Route element={<MainLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/screen" element={<ScreeningFlow />} />
           <Route path="/regional" element={<RegionalIntelligence />} />
           <Route path="/health-system" element={<HealthSystem />} />
-          <Route path="/patients" element={<div className="text-forest text-xl font-medium mt-10">Patients Directory (Mock)</div>} />
+          <Route path="/patients" element={<Patients />} />
           <Route path="/priority" element={<div className="text-forest text-xl font-medium mt-10">Priority Queue (Mock)</div>} />
           <Route path="/simulation" element={<div className="text-forest text-xl font-medium mt-10">Simulation Sandbox (Mock)</div>} />
           <Route path="/settings" element={<div className="text-forest text-xl font-medium mt-10">Settings (Mock)</div>} />

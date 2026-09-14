@@ -15,7 +15,7 @@ export default function Login() {
 
   const handlePatientLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate('/patient-portal');
+    navigate('/patients');
   };
 
   const handleClinicianLogin = (e: React.FormEvent) => {
@@ -171,7 +171,7 @@ export default function Login() {
                   type="submit"
                   className="w-full bg-forest text-cream py-4 rounded-full font-bold text-lg hover:bg-forest-dark transition-all mt-4 flex items-center justify-center gap-2 shadow-sm"
                 >
-                  Access My Results <ArrowRight className="w-5 h-5" />
+                  Go to Patients <ArrowRight className="w-5 h-5" />
                 </button>
               </motion.form>
             ) : (
