@@ -1,6 +1,6 @@
 {
-  "name": "Radiant Retina",
-  "description": "An AI-powered diabetic retinopathy screening platform with a warm, human-centered design.",
+  "name": "DR Sahayak",
+  "description": "AI-powered diabetic retinopathy screening tool for eye-care providers in India.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

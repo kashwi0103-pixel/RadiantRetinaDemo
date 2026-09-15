@@ -8,6 +8,7 @@ import ScreeningFlow from './pages/ScreeningFlow';
 import RegionalIntelligence from './pages/RegionalIntelligence';
 import HealthSystem from './pages/HealthSystem';
 import Patients from './pages/Patients';
+import LiveVoice from './components/LiveVoice';
 
 function MainLayout() {
   return (
@@ -25,6 +26,7 @@ function MainLayout() {
 export default function App() {
   return (
     <BrowserRouter>
+      <LiveVoice />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/how-it-works" element={<HowItWorks />} />

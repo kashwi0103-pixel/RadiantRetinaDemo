@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import eyeLogo from '../assets/images/eye_logo_1789455749600.jpg';
 
 function cn(...inputs: (string | undefined | null | false)[]) {
   return twMerge(clsx(inputs));
@@ -31,11 +32,8 @@ export default function Sidebar() {
   return (
     <div className="w-64 bg-cream-dark/30 border-r border-cream-dark min-h-screen flex flex-col pt-8">
       <Link to="/" className="px-6 mb-10 flex items-center gap-3 cursor-pointer group">
-        <div className="w-8 h-8 rounded-full bg-forest flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-chartreuse opacity-20 rounded-full blur-sm group-hover:opacity-40 transition-opacity" />
-          <div className="w-3 h-3 rounded-full bg-chartreuse relative z-10" />
-        </div>
-        <span className="text-xl font-bold text-forest tracking-tight group-hover:text-forest-dark transition-colors">Radiant Retina</span>
+        <img src={eyeLogo} alt="DR Sahayak Logo" className="w-10 h-10 object-cover rounded-full border border-forest/20" />
+        <span className="text-xl font-bold text-forest tracking-tight group-hover:text-forest-dark transition-colors">DR Sahayak</span>
       </Link>
 
       <nav className="flex-1 px-4 space-y-1">
